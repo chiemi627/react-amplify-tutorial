@@ -5,6 +5,9 @@ import Title from "./components/Title";
 import Form from "./components/Form";
 import Results from "./components/Results";
 import { useState } from 'react';
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
 
 type ResultsStateType = {
   country: string;
